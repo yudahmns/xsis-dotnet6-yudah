@@ -1,0 +1,5 @@
+dotnet new webapi --use-minimal-apis --framework "net6.0" --output "xsis-dotnet6-yudah"
+dotnet dev-certs https --trust
+dotnet add package Microsoft.EntityFrameworkCore --version 7.0.14
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 7.0.11
+dotnet add package Swashbuckle.AspNetCore.Annotations --version 6.5.0
