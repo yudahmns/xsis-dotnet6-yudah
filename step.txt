@@ -3,3 +3,18 @@ dotnet dev-certs https --trust
 dotnet add package Microsoft.EntityFrameworkCore --version 7.0.14
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 7.0.11
 dotnet add package Swashbuckle.AspNetCore.Annotations --version 6.5.0
+
+-- public.movie definition
+
+-- Drop table
+
+-- DROP TABLE public.movie;
+
+CREATE TABLE public.movie (
+	id int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
+	title varchar NULL,
+	rating numeric NULL,
+	image varchar NULL,
+	created_at timestamp NULL,
+	updated_at timestamp NULL
+);
